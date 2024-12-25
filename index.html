@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodify - Created by Nilesh Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>Melodify</span>
+            </div>
+            <div class="editor-info">
+                <p>Created by Nilesh Sharma</p>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fas fa-list"></i> Library</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Liked Songs</a></li>
+            </ul>
+            <div class="playlists">
+                <h3>Your Playlists</h3>
+                <ul>
+                    <li>Favorite Mix</li>
+                    <li>Daily Mix 1</li>
+                    <li>Workout Beats</li>
+                    <li>Chill Vibes</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for songs, artists, or albums">
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/32" alt="Profile">
+                    <span>John Doe</span>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <section class="featured">
+                    <h2>Recently Played</h2>
+                    <div class="album-grid">
+                        <div class="album-card">
+                            <img src="https://via.placeholder.com/150" alt="Album 1">
+                            <h3>Album Name</h3>
+                            <p>Artist Name</p>
+                        </div>
+                        <div class="album-card">
+                            <img src="https://via.placeholder.com/150" alt="Album 2">
+                            <h3>Album Name</h3>
+                            <p>Artist Name</p>
+                        </div>
+                        <div class="album-card">
+                            <img src="https://via.placeholder.com/150" alt="Album 3">
+                            <h3>Album Name</h3>
+                            <p>Artist Name</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recommended">
+                    <h2>Made for You</h2>
+                    <div class="playlist-grid">
+                        <div class="playlist-card">
+                            <img src="https://via.placeholder.com/150" alt="Playlist 1">
+                            <h3>Daily Mix 1</h3>
+                            <p>Based on your recent listening</p>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="https://via.placeholder.com/150" alt="Playlist 2">
+                            <h3>Discover Weekly</h3>
+                            <p>New music for you</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Player Bar -->
+        <div class="player-bar">
+            <div class="now-playing">
+                <img src="https://via.placeholder.com/60" alt="Current Track">
+                <div class="track-info">
+                    <h4>Song Title</h4>
+                    <p>Artist Name</p>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button><i class="fas fa-random"></i></button>
+                    <button><i class="fas fa-step-backward"></i></button>
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
+                    <button><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time">0:00</span>
+                    <div class="progress">
+                        <div class="progress-filled"></div>
+                    </div>
+                    <span class="total-time">3:45</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <i class="fas fa-volume-up"></i>
+                <div class="volume-slider">
+                    <div class="volume-filled"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
